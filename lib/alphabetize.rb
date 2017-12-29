@@ -30,7 +30,7 @@ ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
  end
 
  def get_alphabet_hash
-   alphabet_hash = {" " => 0} # so that whitespace characters can be looked up
+   alphabet_hash = {" " => 0} 
   ALPHABET.split("").each_with_index do |letter, i|
     alphabet_hash[letter] = i + 1
   end
